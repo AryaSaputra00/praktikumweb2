@@ -6,11 +6,11 @@
             <table class="table mt-4" style="width:100%; margin:0 auto;">
                 <tbody>
                     <tr>
-                        <td align="right" width="50%"><strong>NPM :</strong></td>
-                        <td align="left" width="50%">2110010044</td>
+                        <td align="right" width="50%"><strong> NPM :</strong></td>
+                        <td align="left" width="50%"> 2110010044</td>
                     </tr>
                     <tr>
-                        <td align="right" width="50%"><strong>Fakultas / Program Studi :</strong></td>
+                        <td align="right" width="50%"><strong>Fakultas / Program Studio :</strong></td>
                         <td align="left" width="50%">Teknologi Informasi / Teknik Informatika</td>
                     </tr>
                     <tr>
@@ -27,22 +27,22 @@
                     </tr>
                     <tr>
                         <td align="right" width="50%"><strong>email :</strong></td>
-                        <td align="left" width="50%">AryaSaputra@gmail.com</td>
+                        <td align="left" width="50%">abangputra097@gmail.com</td>
                     </tr>
                     <tr>
                         <td align="right" width="50%"><strong>Media Sosial :</strong></td>
                         <td align="left" width="50%">
-                            <a href="https://m.facebook.com/" target="_blank" style="text-decoration:none;">
-                                <img src="img/medsos/icons8-facebook.svg" width="30" alt="facebook">
+                            <a href="http://facebook.com/AryaSaputara" target="_blank" style="text-decoration:none;">
+                                <img src="img/facebook.jpg" width="30" alt="facebook">
                             </a>
-                            <a href="https://instagram.com/putptrra._21?" target="_blank" style="text-decoration:none;">
-                                <img src="img/medsos/icons8-instagram.svg" width="30" alt="instagram">
+                            <a href="http://instagram.com/putptrra._21" target="_blank" style="text-decoration:none;">
+                                <img src="img/instagram.jpg" width="30" alt="instagram">
                             </a>
                             <a href="http://twitter.com/" target="_blank" style="text-decoration:none;">
-                                <img src="img/medsos/icons8-twitter.svg" width="30" alt="twitter">
+                                <img src="img/twitter.jpg" width="30" alt="twitter">
                             </a>
                             <a href="http://linkedin.com/in/" target="_blank">
-                                <img src="img/medsos/icons8-linkedin.svg" width="30" alt="linkedin">
+                                <img src="img/linkid.jpg" width="30" alt="linkedin">
                             </a>
                         </td>
                     </tr>

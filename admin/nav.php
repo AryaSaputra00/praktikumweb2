@@ -6,14 +6,13 @@
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
-    if ($_SESSION['username'] == 'admin') {
+    if ($_SESSION['unsername'] == 'admin') {
         echo '
     <li class="list-group-item"><a href="?page=user-show">Data User</a></li>
     <li class="list-group-item"><a href="?page=user-add">Tambah Data User</a></li>
-    <li class="list-group-item"><a href="?page=matakuliah-show">Data Mata kuliah</a></li>
-    <li class="list-group-item"><a href="?page=matakuliah-add">Tambah Data Mata kuliah</a></li>
-    ';
+    <li class="list-group-item"><a href="?page=matakuliah-show">Data Matakuliah</a></li>
+    <li class="list-group-item"><a href="?page=matakuliah-add">Tambah Data Matakuliah</a></li>';
     }
     ?>
-    <li class="list-group-item"><a href="logout.php">Logout</a></li>
+    <li class="list-group-item"><a href="logout.php ">Logout</a></li>
 </ul>

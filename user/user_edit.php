@@ -15,7 +15,8 @@ while ($data = mysqli_fetch_array($result)) {
     <div class="card-body">
         <form action="?page=user-update" method="POST">
             <!-- <?php echo $password ?> -->
-            <input type="hidden" name="password_lama1" class="form-control" placeholder="Username" value="<?php echo $password; ?>">
+            <input type="hidden" name="password_lama1" class="form-control" placeholder="Username" value="<?php echo $password;
+                                                                                                            ?>">
             <div class="form-group row">
                 <label for="username" class="col-sm-3 col-form-label">Username</label>
                 <div class="col-sm-9">
@@ -28,14 +29,14 @@ while ($data = mysqli_fetch_array($result)) {
                     <input type="password" name="password_lama2" class="form-control" placeholder="Password Lama" required>
                 </div>
             </div>
-            <div class="form-group row">
+            <div class=" form-group row">
                 <label for="password_baru" class="col-sm-3 col-form-label">Password Baru</label>
                 <div class="col-sm-9">
                     <input type="password" name="password_baru" class="form-control" placeholder="Password Baru" required>
                 </div>
             </div>
     </div>
-    <div class="card-footer bg-transparent">
+    <div class=" card-footer bg-transparent">
         <input type="hidden" name="id" value=<?php echo $id; ?>>
         <button type="submit" name="update" class="btn btn-primary">Simpan</button>
         <button type="reset" class="btn btn-danger">Reset</button>

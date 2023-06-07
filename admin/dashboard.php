@@ -1,9 +1,16 @@
+<?php
+//session_start();
+?>
 <div class="card">
     <div class="card-header">
         <strong>INFORMASI</strong>
     </div>
     <div class="card-body">
-        <p>Selamat Datang <strong><i><?php echo $_SESSION['username'] ?></i></strong>,</p>
+        <?php if (isset($_SESSION['username'])) : ?>
+            <p>Selamat Datang Putra <strong><i><?php echo $_SESSION['username'] ?></i></strong></p>
+        <?php else : ?>
+            <p>Selamat Datang Putra</p>
+        <?php endif; ?>
         <p>
             <strong>Materi ini mempelajari CRUD basic dengan <code>PHP + MYSQLi</code> </strong><br><br>
             Apa saja yang kita pelajari ?
@@ -15,7 +22,7 @@
             <li>Login User dengan password <code>HASH</code></li>
             <li>Register User</li>
             <li>Fungsi simpan data</li>
-            <li>Fungsi edit data </li>
+            <li>Fungsi edit data</li>
             <li>Fungsi hapus data</li>
             <li>Fungsi cari data</li>
             <li>Fungsi pagination</li>

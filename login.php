@@ -5,7 +5,7 @@ require_once 'connection.php';
 // Jalankan session
 session_start();
 
-// Cek apakah pengguna sudah login dan arahkan ke halaman admin jika iya
+//Cek apakah pengguna sudah login dan arahkan ke halaman admin jika iya
 if (isset($_SESSION['username'])) {
     header('Location:admin/index.php');
     exit;

@@ -9,8 +9,8 @@ if (isset($_POST['registrasi'])) {
         echo "<meta http-equiv='refresh' content='0 url=?page=user-add'>";
         return false;
     }
-    $cekUsername = mysqli_query($con, "SELECT * FROM user WHERE username = '" . $username . "' ");
-    if (mysqli_num_rows($cekUsername) >= 1) {
+    $cekusername = mysqli_query($con, "SELECT * FROM user WHERE username = '" . $username . "' ");
+    if (mysqli_num_rows($cekusername) >= 1) {
         echo '<script>alert("username tidak dapat digunakan");</script>';
         echo "<meta http-equiv='refresh' content='0 url=?page=user-add'>";
         return false;
@@ -22,7 +22,7 @@ if (isset($_POST['registrasi'])) {
     if ($exec === true) {
         echo '<script>alert("User berhasil di tambahkan");</script>';
     } else {
-        echo '<script>alert("User gagal di tambahkan");</script>';
+        '<script>alert("User gagal di tambahkan");</script>';
     }
 }
 ?>

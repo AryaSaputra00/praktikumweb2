@@ -4,7 +4,7 @@
     </div>
     <div class="card-body">
         <form action="?page=user-show" method="POST">
-            <div class="input-group mb-3">
+            <div class=" input-group mb-3">
                 <input type="text" class="form-control" placeholder="Masukan Username..." name="keyword">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit" value="Cari" id="button-search" name="search">Cari !</button>
@@ -18,7 +18,7 @@
             <table class="table table-sm table-bordered table-hover m-0">
                 <?php
                 $limit = 5;
-                $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
+                $page = isset($_GET["halaman"]) ? (int) $_GET["halaman"] : 1;
                 $mulai = ($page > 1) ? ($page * $limit) - $limit : 0;
                 $query = mysqli_query($con, "SELECT * FROM user LIMIT $mulai, $limit") or die(mysqli_error($con));
                 ?>
@@ -45,8 +45,8 @@
                             <td><?php echo $data['username']; ?></td>
                             <td>
                                 <a class="btn btn-sm btn-success" href="?page=user-edit&id=<?php echo $data['id']; ?>">Edit</a>
-                                <a class="btn btn-sm btn-danger" href="../user/user_delete.php?id=<?php echo $data['id']; ?>" onclick="return confirm('Anda yakin mau menghapus item ini ?')">Hapus</a>
-                            </td>
+                                <a class="btn btn-sm btn-danger" href="../user/user_delete.php?id=<?php echo $data['id']; ?>" onclick="return
+confirm('Anda yakin mau menghapus item ini ?')">Hapus</a>
                         </tr>
                     <?php
                         $no++;

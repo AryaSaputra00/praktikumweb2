@@ -7,8 +7,7 @@
             <div class=" input-group mb-3">
                 <input type="text" class="form-control" placeholder="Masukan NIM atau Nama..." name="keyword">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit" value="Cari" id="button-search" name="search">Cari
-                        !</button>
+                    <button class="btn btn-primary" type="submit" value="Cari" id="button-search" name="search">Cari !</button>
                 </div>
             </div>
         </form>
@@ -85,9 +84,7 @@
                 } else {
                     $link_prev = ($page > 1) ? $page - 1 : 1;
                     echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=1">First</a></li>';
-
-                    echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=' . $link_prev . '" aria-
-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+                    echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=' . $link_prev . '" arialabel="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
                 }
                 for ($i = $start_number; $i <= $end_number; $i++) {
                     $link_active = ($page == $i) ? ' active' : '';
@@ -99,10 +96,7 @@ label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
                     echo '<li class="page-item disabled"><a class="page-link" href="#">Last</a></li>';
                 } else {
                     $link_next = ($page < $jumlah_page) ? $page + 1 : $jumlah_page;
-
-                    echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=' . $link_next . '" aria-
-label="Next"><span aria-hidden="true">&raquo;</span></a></li>';
-
+                    echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=' . $link_next . '" arialabel="Next"><span aria-hidden="true">&raquo;</span></a></li>';
                     echo '<li class="page-item"><a class="page-link" href="?page=mahasiswa-show&halaman=' . $jumlah_page .
                         '">Last</a></li>';
                 }
